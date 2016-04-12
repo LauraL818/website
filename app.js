@@ -5,5 +5,5 @@ setTimeout(
     $(".name").typed({
           strings: ["LAURA ^500 LEONARD"],
           typeSpeed: 50
-      })}, 500)
+      })}, 1000)
 })
