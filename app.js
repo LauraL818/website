@@ -8,6 +8,7 @@ $(function(){
   var $contactPage = $(".contact")
   var $homePage = $(".home")
 
+/////////////////////HIDE ON PAGE LOAD///////////////////////////////
   $aboutPage.hide()
   $projectsPage.hide()
   $contactPage.hide()
@@ -18,9 +19,9 @@ $(function(){
       $(".name").typed({
             strings: ["LAURA ^500 LEONARD"],
             typeSpeed: 50
-        })}, 700)
-        
-/////////////////////FUNCTIONS FOR SHOWING AND HIDING/////////////////////////
+        })}, 600)
+
+/////////////////////FUNCTIONS FOR SHOWING AND HIDING/////////////////////
   $about.click(function(){
     $aboutPage.show()
     $projectsPage.hide()
