@@ -36,5 +36,14 @@
 }
 
 .name {
-  margin-top: 30%;
+  margin-top: 27%;
+}
+
+.breadcrumb {
+  background: none;
+}
+
+.breadcrumb a{
+  color:white;
+  font-size:18px;
 }
