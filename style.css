@@ -1,4 +1,8 @@
-.jumbotron {
+body {
+  background-color: #E9EBE5;
+}
+
+#main-jumbo {
   background:
     /* top, transparent red, faked with gradient */
     linear-gradient(
@@ -10,7 +14,24 @@
     width: 100%;
     height: 100%;
     background-size: cover;
-    color: white;
+    color: #E9EBE5;
+}
+
+#portfolio-jumbo {
+  background:
+    /* top, transparent red, faked with gradient */
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    /* bottom, image */
+    url("./images/portfolio.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    color: #E9EBE5;
+    padding:14%;
+    margin-top: 3%;
 }
 
 .typed-cursor{
@@ -44,6 +65,22 @@
 }
 
 .breadcrumb a{
-  color:white;
+  color:#E9EBE5;
   font-size:18px;
+}
+
+#profile {
+  box-shadow: 2px 2px 2px black;
+}
+
+#summary {
+  margin-top: 6%;
+}
+
+#learn {
+  color:#507E85;
+}
+
+.port {
+  color:#507E85;
 }

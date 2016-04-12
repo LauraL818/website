@@ -21,6 +21,19 @@ $(function(){
             typeSpeed: 50
         })}, 600)
 
+/////////////////////FUNCTION FOR TYPING PORTFOLIO/////////////////////////
+      $(window).on('scroll', function() {
+      var y_scroll_pos = window.pageYOffset
+      var scroll_pos_test = $('#outer').height()
+
+      if(y_scroll_pos > scroll_pos_test) {
+        $(".port").typed({
+              strings: ["PORTFOLIO"],
+              typeSpeed: 100
+          })
+      }
+  });
+
 /////////////////////FUNCTIONS FOR SHOWING AND HIDING/////////////////////
   $about.click(function(){
     $aboutPage.show()
@@ -49,5 +62,7 @@ $(function(){
     $projectsPage.hide()
     $contactPage.hide()
   })
+
+
 
 })
