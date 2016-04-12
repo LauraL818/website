@@ -29,7 +29,7 @@ $(function(){
       if(y_scroll_pos > scroll_pos_test) {
         $(".port").typed({
               strings: ["PORTFOLIO"],
-              typeSpeed: 100
+              typeSpeed: 150
           })
       }
   });

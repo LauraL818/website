@@ -87,15 +87,23 @@ body {
 
 /*PORTFOLIO CAROUSEL*/
 
+.carousel-inner {
+    margin: 20px auto;
+    max-height:260px;
+}
+
 #carousel-example-generic {
     margin: 20px auto;
     width: 400px;
 }
 
+
 #carousel-custom {
     margin: 20px auto;
     width: 400px;
+    /*max-height: 150px;*/
 }
+
 #carousel-custom .carousel-indicators {
     margin-top: 10px;
     position: static;
