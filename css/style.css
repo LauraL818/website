@@ -3,9 +3,6 @@ body {
   overflow-x:hidden;
 }
 
-#jumbotron {
-  height:200px;
-}
 
 #main-jumbo {
   background:
@@ -15,9 +12,10 @@ body {
       rgba(0, 0, 0, 0.45)
     ),
     /* bottom, image */
-    url("../images/2.jpg");
+    url("../images/background.png");
     background-size: cover;
     color: #efebe0;
+    width:100%;
     margin-top: -60px;
 }
 
