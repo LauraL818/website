@@ -1,3 +1,4 @@
+
 $(function(){
   var $about = $(".about-button")
   var $projects = $(".projects-button")
@@ -23,10 +24,9 @@ $(function(){
   var $fourDescription = $('.four-description')
 
 
-
-
-  $('.button-collapse').sideNav();
-$('.scrollspy').scrollSpy();
+    $(document).ready(function(){
+      $('.carousel').carousel();
+    });
 
 /////////////////////HIDE ON PAGE LOAD///////////////////////////////
   $aboutPage.hide()

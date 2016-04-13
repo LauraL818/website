@@ -12,9 +12,9 @@
     <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
     <!-- MATERIALIZE -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 
     <!-- TYPED JS -->
     <script src="libs/typed.js"></script>
@@ -25,69 +25,64 @@
 
   </head>
     <body>
+      <!-- MAIN JUMBOTRON -->
+      <div id="main-jumbo" class="row">
+        <nav>
+          <div class="nav-wrapper">
+            <ul id="nav-mobile" class="left">
+              <li><a href="sass.html">Home</a></li>
+              <li><a href="badges.html">About</a></li>
+              <li><a href="collapsible.html">Projects</a></li>
+              <li><a href="collapsible.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
 
+          <h1 class="name center-align"></h1>
+      </div>
+      <!-- END MAIN JUMBOTRON -->
 
-    <div class="row">
-      <div class="col s12" id="main-jumbo">This div is 12-columns wide</div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- MAIN JUMBOTRON -->
-    <!-- <div class="row">
-        <img class="responsive-img" src="images/2.jpg" id="jumbotron">
-    </div>
-
-    <div class="row text-center">
-        <h1 class="name col-sm-12 col-md-12 col-lg-12"></h1>
-    </div> -->
-
-<!-- END MAIN JUMBOTRON -->
 
 <!-- SUMMARY -->
 
-  <!-- <div class="home row">
-    <div class="col-sm-12 col-md-6 col-lg-6 text-center">
-      <img src="./images/photo.png" class="img-circle" alt="" id="profile"/>
+  <div class="home row">
+    <div class="col s12 m6 l6  center-align">
+      <img src="./images/me.png" class="circle" alt="" id="profile" height="300px"/>
     </div>
 
-  <div id="summary" class="col-sm-12 col-md-6 col-lg-6 text-center home">
-      <h4>Hello! I'm Laura. I am a recent graduate from the Web Development Immersive program at General Assembly.</h4>
-      <h5>I am diehard sports fan who happens to love full stack web development and data visualization.</h5>
-      <h4><a id="learn" class="about-button" href="#">LEARN MORE</a></h4>
+  <div id="summary" class="col s12 m6 l6 home">
+      <h5 class="center-align">Hello! I'm Laura. I am a recent graduate from the Web Development Immersive program at General Assembly.</h5>
+      <p class="center-align">I am diehard sports fan who happens to love full stack web development and data visualization.</p>
+      <h5  class="center-align"><a id="learn" class="about-button" href="#">LEARN MORE</a></h5>
     </div>
-  </div>  -->
+  </div>
 <!-- END SUMMARY -->
 
 <!-- PORTFOLIO JUMBOTRON -->
-<!-- <div class="container-fluid">
+
   <div class="row home">
-    <div id="portfolio-jumbo" class="jumbotron">
-      <h1 class="port"></h1>
+    <div id="portfolio-jumbo">
+      <h1 class="port left-align"></h1>
     </div>
   </div>
-</div> -->
 
 <!-- END PORTFOLIO JUMBOTRON -->
+<div class="carousel">
+  <a class="carousel-item" href="#one!"><img src="images/Movie-2.png"><h5 class="center-align project-titles"> Portfolio </h5></a>
+  <a class="carousel-item" href="#one!"><img src="images/Long-Shot.png"><h5 class="center-align project-titles">Long Shot</h5></a>
+  <a class="carousel-item" href="#two!"><img src="images/Baseball-journal.png"><h5 class="center-align project-titles">Baseball Journal</h5></a>
+  <a class="carousel-item" href="#four!"><img src="images/Movie-Index.png"><h5 class="center-align project-titles">Movie Index</h5></a>
+  <a class="carousel-item" href="#three!"><img src="images/VentCal.png"><h5 class="center-align project-titles">VentCal</h5></a>
+</div>
+
+<footer class="page-footer">
+
+    <div class="container center-align">
+    LAURA LEONARD | FULL STACK DEVELOPER
+    </div>
+
+</footer>
+
 
 
 

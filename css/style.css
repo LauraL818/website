@@ -15,9 +15,23 @@ body {
     url("../images/background.png");
     background-size: cover;
     color: #efebe0;
-    width:100%;
-    margin-top: -60px;
+    padding: 3%;
 }
+
+.name {
+  margin-top: 20%;
+}
+
+nav {
+  background-color: transparent;
+  box-shadow: 0 0 0;
+  color:#efebe0;
+}
+
+nav ul a{
+  color:#efebe0;
+}
+
 
 #portfolio-jumbo {
   background:
@@ -30,19 +44,9 @@ body {
     url("../images/portfolio.jpg");
     background-size: cover;
     color: #efebe0;
-    padding:14%;
+    padding:10%;
     margin-top: 3%;
-}
-
-.container-fluid {
-    padding-right: 0;
-    padding-left: 0;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.name {
-  margin-top: 20%;
+    margin-bottom: 7%
 }
 
 .breadcrumb {
@@ -59,13 +63,10 @@ body {
   border:3px solid #E9EBE5;
 }
 
-#profile {
-  box-shadow: 2px 2px 2px black;
-}
-
 
 #summary {
-  margin-top: 6%;
+  margin-top: 4%;
+  color: #5C594D;
 }
 
 #learn {
@@ -74,84 +75,12 @@ body {
 
 /*PORTFOLIO CAROUSEL*/
 
-.carousel-inner {
-    margin: 20px auto;
-    max-height:260px;
+
+.carousel .carousel-item {
+  width: 370px;
 }
 
-#carousel-example-generic {
-    margin: 20px auto;
-    width: 400px;
-}
-
-#carousel-custom {
-    margin: 20px auto;
-    width: 400px;
-}
-
-#carousel-custom .carousel-indicators {
-    margin-top: 10px;
-    position: static;
-    text-align: left;
-    white-space: nowrap;
-    width: 100%;
-}
-#carousel-custom .carousel-indicators li {
-    background-color: transparent;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    display: inline-block;
-    height: auto;
-    margin: 0 !important;
-    width: auto;
-}
-#carousel-custom .carousel-indicators li img {
-    display: block;
-    opacity: 0.5;
-}
-#carousel-custom .carousel-indicators li.active img {
-    opacity: 1;
-}
-#carousel-custom .carousel-indicators li:hover img {
-    opacity: 0.75;
-}
-#carousel-custom .carousel-outer {
-    position: relative;
-}
-
-#carousel-custom .carousel-inner a{
-  color:#5B5C5A;
-}
-
-/* HIDE CAROUSEL THUMBNAILS */
-@media only screen and (max-width: 600px) {
-    .mCustomScrollbar {
-        opacity:0;
-    }
-}
 /*END CAROUSEL*/
-
-#footer{
-  background-color:#507E85;
-  /*padding: 5px;*/
-  color: #efebe0;
-  position: static;
-  bottom: 0;
-  /*width: 102%;*/
-  height: 35px;
-}
-
-#footer ul {
-  margin-right: 3%;
-}
-
-.footer-list{
-  display: inline-block;
-}
-
-.footer-ul{
-  color: #efebe0;
-}
 
 .thumbnail {
     border: 0 none;
@@ -167,4 +96,13 @@ body {
 .vertical-align {
     display: flex;
     align-items: center;
+}
+
+footer.page-footer {
+  background-color: #507E85;
+  color: #efebe0;
+}
+
+.project-titles {
+  color: #5C594D;
 }
