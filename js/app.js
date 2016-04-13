@@ -7,18 +7,37 @@ $(function(){
   var $projectsPage = $(".projects")
   var $contactPage = $(".contact")
   var $homePage = $(".home")
+  var $all = $('.all')
+  var $one = $('#one')
+  var $two = $('#two')
+  var $three = $('#three')
+  var $four = $('#four')
+  var $allButton = $('#all-button')
+  var $oneButton = $('#one-button')
+  var $twoButton = $('#two-button')
+  var $threeButton = $('#three-button')
+  var $fourButton = $('#four-button')
+  var $oneDescription = $('.one-description')
+  var $twoDescription = $('.two-description')
+  var $threeDescription = $('.three-description')
+  var $fourDescription = $('.four-description')
 
 /////////////////////HIDE ON PAGE LOAD///////////////////////////////
   $aboutPage.hide()
   $projectsPage.hide()
   $contactPage.hide()
+  $oneDescription.hide()
+  $twoDescription.hide()
+  $threeDescription.hide()
+  $fourDescription.hide()
 
 /////////////////////FUNCTION FOR TYPING NAME/////////////////////////
   setTimeout(
     function(){
       $(".name").typed({
             strings: ["LAURA ^500 LEONARD"],
-            typeSpeed: 50
+            typeSpeed: 50,
+            showCursor: false
         })}, 600)
 
 /////////////////////FUNCTION FOR TYPING PORTFOLIO/////////////////////////
@@ -29,10 +48,11 @@ $(function(){
       if(y_scroll_pos > scroll_pos_test) {
         $(".port").typed({
               strings: ["PORTFOLIO"],
-              typeSpeed: 150
+              typeSpeed: 150,
+              showCursor: false
           })
       }
-  });
+  })
 
 /////////////////////FUNCTIONS FOR SHOWING AND HIDING/////////////////////
   $about.click(function(){
@@ -62,7 +82,6 @@ $(function(){
     $projectsPage.hide()
     $contactPage.hide()
   })
-
 
 
 })
