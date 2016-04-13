@@ -22,6 +22,12 @@ $(function(){
   var $threeDescription = $('.three-description')
   var $fourDescription = $('.four-description')
 
+
+
+
+  $('.button-collapse').sideNav();
+$('.scrollspy').scrollSpy();
+
 /////////////////////HIDE ON PAGE LOAD///////////////////////////////
   $aboutPage.hide()
   $projectsPage.hide()

@@ -3,6 +3,10 @@ body {
   overflow-x:hidden;
 }
 
+#jumbotron {
+  height:200px;
+}
+
 #main-jumbo {
   background:
     /* top, transparent red, faked with gradient */

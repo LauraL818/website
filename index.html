@@ -13,12 +13,10 @@
     <!-- D3.JS -->
     <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
-    <!-- BOOTSTRAP -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <!-- MATERIALIZE -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- TYPED JS -->
     <script src="libs/typed.js"></script>
@@ -28,28 +26,105 @@
     <script src="js/app.js"></script>
 
   </head>
-  <body>
-<!-- MAIN JUMBOTRON -->
-<div class="container-fluid">
-  <div id="main-jumbo" class="jumbotron">
-    <div class="row">
-      <ol class="breadcrumb col-sm-12 col-md-12 col-lg-12">
-        <li><a href="#" class="home-button">Home</a></li>
-        <li><a href="#" class="about-button">About</a></li>
-        <li><a href="#" class="projects-button">Projects</a></li>
-        <li><a href="#" class="contact-button">Contact</a></li>
-      </ol>
+  <!-- <body> -->
+
+    <body id="top" class="scrollspy">
+
+  <!-- Pre Loader -->
+  <div id="loader-wrapper">
+      <div id="loader"></div>
+
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+
+  </div>
+
+  <!--Navigation-->
+   <div class="navbar-fixed">
+      <nav id="nav_f" class="default_color" role="navigation">
+          <div class="container">
+              <div class="nav-wrapper">
+              <a href="#" id="logo-container" class="brand-logo">MD Template</a>
+                  <ul class="right hide-on-med-and-down">
+                      <li><a href="#intro">Service</a></li>
+                      <li><a href="#work">Work</a></li>
+                      <li><a href="#team">Team</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                      <li><a href="https://github.com/joashp/material-design-template" target="_blank">Download</a></li>
+                  </ul>
+                  <ul id="nav-mobile" class="side-nav">
+                      <li><a href="#intro">Service</a></li>
+                      <li><a href="#work">Work</a></li>
+                      <li><a href="#team">Team</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                      <li><a href="https://github.com/joashp/material-design-template" target="_blank">Download</a></li>
+                  </ul>
+              <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+              </div>
+          </div>
+      </nav>
+  </div>
+
+    <!--Hero-->
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <h1 class="text_h center header cd-headline letters type">
+                <span>I Love</span>
+            </h1>
+        </div>
     </div>
+
+
+    <!--Parallax-->
+    <div class="parallax-container">
+        <div class="parallax"><img src="images/2.jpg"></div>
+    </div>
+
+    <!--Footer-->
+        <footer id="contact"  class="page-footer scrollspy">
+            <div class="container">
+                Made by <a class="white-text" href="http://joashpereira.com">Joash Pereira</a>. Thanks to <a class="white-text" href="http://materializecss.com/">materializecss</a>
+            </div>
+        </div>
+    </footer>
+
+        </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MAIN JUMBOTRON -->
+    <!-- <div class="row">
+        <img class="responsive-img" src="images/2.jpg" id="jumbotron">
+    </div>
+
     <div class="row text-center">
         <h1 class="name col-sm-12 col-md-12 col-lg-12"></h1>
-    </div>
-  </div>
-</div>
+    </div> -->
 
 <!-- END MAIN JUMBOTRON -->
 
 <!-- SUMMARY -->
-  <div class="home row">
+
+  <!-- <div class="home row">
     <div class="col-sm-12 col-md-6 col-lg-6 text-center">
       <img src="./images/photo.png" class="img-circle" alt="" id="profile"/>
     </div>
@@ -59,170 +134,22 @@
       <h5>I am diehard sports fan who happens to love full stack web development and data visualization.</h5>
       <h4><a id="learn" class="about-button" href="#">LEARN MORE</a></h4>
     </div>
-  </div> <!-- End summary -->
+  </div>  -->
 <!-- END SUMMARY -->
 
 <!-- PORTFOLIO JUMBOTRON -->
-<div class="container-fluid">
+<!-- <div class="container-fluid">
   <div class="row home">
     <div id="portfolio-jumbo" class="jumbotron">
       <h1 class="port"></h1>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- END PORTFOLIO JUMBOTRON -->
 
-<!-- CAROUSEL -->
-  <div class="row home">
-    <div id='carousel-custom' class='carousel slide' data-ride='carousel'>
-
-    <div class='carousel-outer'>
-        <!-- Wrapper for slides -->
-        <div class='carousel-inner'>
-            <div class='item active text-center'>
-                <img src='./images/Long-Shot.png' alt='' height="300px"/>
-                <h4><a href="http://laural818.github.io/WDI_Project1/">Long Shot</a></h4>
-            </div>
-            <div class='item text-center'>
-              <img src='./images/Baseball-journal.png' alt='' height="300px"/>
-              <h4><a href="https://baseball-journey.herokuapp.com/">Baseball Journal</a></h4>
-            </div>
-            <div class='item text-center'>
-              <img src='./images/VentCal.png' alt='' height="300px"/>
-                <h4><a href="https://ventcal.herokuapp.com">VentCal</a></h4>
-            </div>
-
-            <div class='item text-center'>
-              <img src='./images/Movie-Index.png' alt='' height="300px"/>
-                <h4><a href="https://allthemovies.herokuapp.com/#/">Movie Index</a></h4>
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <a class='left carousel-control' href='#carousel-custom' data-slide='prev'>
-            <span class='glyphicon glyphicon-chevron-left'></span>
-        </a>
-        <a class='right carousel-control' href='#carousel-custom' data-slide='next'>
-            <span class='glyphicon glyphicon-chevron-right'></span>
-        </a>
-    </div>
-
-    <!-- Indicators -->
-      <ol class='carousel-indicators mCustomScrollbar'>
-          <li data-target='#carousel-custom' data-slide-to='0' class='active'><img src='./images/Long-Shot.png' alt='' height='100px' width='150px'/></li>
-          <li data-target='#carousel-custom' data-slide-to='1'><img src='./images/Baseball-journal.png' alt='' height='100px' width='150px'/></li>
-          <li data-target='#carousel-custom' data-slide-to='2'><img src='./images/VentCal.png' alt='' height='100px' width='150px'/></li>
-          <li data-target='#carousel-custom' data-slide-to='3'><img src='./images/Movie-Index.png' alt='' height='100px' width='150px'/></li>
-      </ol>
-
-    </div>
-  </div>
-<!-- END CAROUSEL -->
-
-<!-- ABOUT -->
-  <div class="about">
-    <h1>About</h1>
-  </div>
-<!-- END ABOUT -->
-
-<!-- PROJECTS -->
-  <div class="container projects text-center">
-    <div class="row">
-      <button id="all-button"> View All </button>
-      <button id="one-button"> Long Shot </button>
-      <button id="two-button"> Baseball Journal </button>
-      <button id="three-button"> VentCal </button>
-      <button id="four-button"> Move Index </button>
-
-    </div>
-    <div class="row all">
-
-      <div class="col-sm-12 col-md-6 col-lg-6" id="one">
-        <h4 class="one-description"><a href="http://laural818.github.io/WDI_Project1/"> Long Shot </a></h4>
-        <img class="port-photo" src='./images/Long-Shot.png' alt='' height="200px"/>
-        <div class="one-description"> Long Shot is a two player sports trivia game. The two players take turns answering a variety of sports questions until one player scores three goals and comes out victorious.</div>
-      </div>
-
-      <div class="col-sm-12 col-md-6 col-lg-6" id="two">
-          <h4 class="two-description"><a href="http://laural818.github.io/WDI_Project1/"> Baseball Journal </a></h4>
-          <img class="port-photo" src='./images/Baseball-journal.png' alt='' height="200px"/>
-          <div class="two-description"> Long Shot is a two player sports trivia game. The two players take turns answering a variety of sports questions until one player scores three goals and comes out victorious.</div>
-        </div>
 
 
-      <div class="col-sm-12 col-md-6 col-lg-6" id="three">
-        <h4 class="three-description"><a href="http://laural818.github.io/WDI_Project1/"> VentCal </a></h4>
-        <img class="port-photo" src='./images/VentCal.png' alt='' height='200px'/>
-        <div class="three-description"> Long Shot is a two player sports trivia game. The two players take turns answering a variety of sports questions until one player scores three goals and comes out victorious.</div>
-      </div>
 
-      <div class="col-sm-12 col-md-6 col-lg-6" id="four">
-        <h4 class="four-description"><a href="http://laural818.github.io/WDI_Project1/"> VentCal </a></h4>
-        <img  class="port-photo" src='./images/Movie-Index.png' alt='' height='200px'/>
-        <div class="four-description"> Long Shot is a two player sports trivia game. The two players take turns answering a variety of sports questions until one player scores three goals and comes out victorious.</div>
-      </div>
-
-      </div>
-    </div>
-
-
-    <!-- <div class="row" id="first">
-      <img src='./images/Long-Shot.png' alt='' height='100px' width='150px'/>
-    </div>
-    <div class="row" id="second">
-        <img src='./images/Baseball-journal.png' alt='' height='100px' width='150px'/>
-    </div>
-    <div class="row" id="third">
-        <img src='./images/VentCal.png' alt='' height='100px' width='150px'/>
-    </div>
-    <div class="row" id="fourth">
-        <img src='./images/Movie-Index.png' alt='' height='100px' width='150px'/>
-    </div> -->
-
-  </div>
-
-<!-- END PROJECTS -->
-
-<!-- CONTACT -->
-      <div class="contact">
-        <h1>Contact</h1>
-        <div class="container">
-          <div class="row pull-left">
-
-              <div class="col-xs-2 col-md-2">
-                <a href="#" class="thumbnail">
-                  <img class="img-responsive img-rounded" src="./images/photo.png" alt="">
-                </a>
-              </div>
-
-
-          </div>
-
-          <div class="row vertical-align pull-left">
-            <ul class="fa-ul">
-              <li>  <i class="fa fa-mobile fa-4x" aria-hidden="true"></i> <span class="description"> 720.277.7468 </span></li>
-              <li><i class="fa fa-envelope fa-2x" aria-hidden="true"></i> <span class="description"> laura.leonard818@gmail.com </span></li>
-            </ul>
-
-          </div>
-
-        </div>
-      </div>
-<!-- END CONTACT -->
-
-<!-- FOOTER -->
-<div class="container-fluid">
-  <footer id="footer">
-    <ul class="text-center">
-      <li class="footer-list"><a class="about-button footer-ul" href="#">About  |  </a></li>
-      <li class="footer-list"><a class="projects-button footer-ul" href="#"> Projects  |   </a></li>
-      <li class="footer-list"><a class="contact-button footer-ul" href="#"> Contact </a></li>
-    </ul>
-  </footer>
-</div>
-
-<!-- END FOOTER -->
-
-  </body>
+  <!-- </body> -->
 </html>
