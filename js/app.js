@@ -38,13 +38,27 @@ $(function(){
   $fourDescription.hide()
 
 /////////////////////FUNCTION FOR TYPING NAME/////////////////////////
-  setTimeout(
-    function(){
-      $(".name").typed({
-            strings: ["LAURA ^500 LEONARD"],
-            typeSpeed: 50,
-            showCursor: false
-        })}, 600)
+  // setTimeout(
+  //   function(){
+  //     $(".name").typed({
+  //           strings: ["LAURA ^500 LEONARD"],
+  //           typeSpeed: 50,
+  //           showCursor: false
+  //       })}, 600)
+
+        var myFunc = function() {
+        $(".name").typed({
+           strings: ["LAURA", "LAURA LEONARD"],
+           typeSpeed: 100, // typing speed
+           backDelay: 500, // pause before backspacing
+           showCursor:false,
+           callback: function () {
+               myFunc();
+           }
+        });
+      }
+      myFunc()
+
 
 /////////////////////FUNCTION FOR TYPING PORTFOLIO/////////////////////////
       $(window).on('scroll', function() {
@@ -66,6 +80,12 @@ $(function(){
     $projectsPage.hide()
     $contactPage.hide()
     $homePage.hide()
+
+    $(".me").typed({
+          strings: ["ABOUT ^500 ME"],
+          typeSpeed: 50,
+          showCursor: false
+      })
   })
 
   $projects.click(function(){
@@ -73,6 +93,11 @@ $(function(){
     $aboutPage.hide()
     $contactPage.hide()
     $homePage.hide()
+      $(".work").typed({
+            strings: ["MY ^500 WORK"],
+            typeSpeed: 50,
+            showCursor: false
+        })
   })
 
   $contact.click(function(){
@@ -80,6 +105,12 @@ $(function(){
     $aboutPage.hide()
     $projectsPage.hide()
     $homePage.hide()
+
+    $(".call").typed({
+          strings: ["CONTACT ^500 ME"],
+          typeSpeed: 50,
+          showCursor: false
+      })
   })
 
   $home.click(function(){
@@ -87,6 +118,9 @@ $(function(){
     $aboutPage.hide()
     $projectsPage.hide()
     $contactPage.hide()
+
+    myFunc()
+
   })
 
 

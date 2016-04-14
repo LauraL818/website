@@ -22,6 +22,18 @@ body {
   margin-top: 20%;
 }
 
+.work {
+  margin-top: 20%;
+}
+
+.call {
+  margin-top: 20%;
+}
+
+.me {
+  margin-top: 20%;
+}
+
 nav {
   background-color: transparent;
   box-shadow: 0 0 0;
@@ -98,11 +110,29 @@ nav ul a{
     align-items: center;
 }
 
+
 footer.page-footer {
   background-color: #507E85;
   color: #efebe0;
 }
 
+#footer-div {
+  background-color: #507E85;
+  color: #efebe0;
+  height:40px;
+  position: absolute;
+  width:100%;
+  margin-bottom: 0;
+}
+
 .project-titles {
+  color: #5C594D;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+  color: #507E85;
+}
+
+.card .card-content{
   color: #5C594D;
 }
