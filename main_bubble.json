@@ -1,27 +1,27 @@
 {"name":"bubble", "children": [
-{"name":"Hard Work",
-"children":[
-    {"name": "Determined"},
-    {"name": "Persistent"},
-    {"name": "Detail-Oriented"}
-]},
-{"name": "Loyality",
-"children":[
-    {"name":"Reliable"},
-    {"name":"Trust Worthy"},
-    {"name":"Sincere"}
-]},
-{"name":"Adventure",
-"children":[
-    {"name":"Courageous"},
-    {"name":"Adaptable"},
-    {"name":"Curious"}
-]},
-{"name":"Humor",
-"children":[
-    {"name":"Quick Witted"},
-    {"name":"Laid Back"},
-    {"name":"Creative"}
+  {"name":"Hard Work",
+  "children":[
+      {"name": "Determined"},
+      {"name": "Persistent"},
+      {"name": "Detail-Oriented"}
+  ]},
+  {"name": "Loyality",
+  "children":[
+      {"name":"Reliable"},
+      {"name":"Trust Worthy"},
+      {"name":"Sincere"}
+  ]},
+  {"name":"Adventure",
+  "children":[
+      {"name":"Courageous"},
+      {"name":"Adaptable"},
+      {"name":"Curious"}
+  ]},
+  {"name":"Humor",
+  "children":[
+      {"name":"Quick Witted"},
+      {"name":"Laid Back"},
+      {"name":"Creative"}
 
-]}
+  ]}
 ]}
