@@ -68,14 +68,14 @@ $(function(){
       // myFunc()
 
 
-/////////////////////FUNCTION FOR TYPING PORTFOLIO/////////////////////////
+/////////////////////FUNCTION FOR TYPING PROJECTS/////////////////////////
       $(window).on('scroll', function() {
       var y_scroll_pos = window.pageYOffset
       var scroll_pos_test = $('#main-jumbo').height()
 
       if(y_scroll_pos > scroll_pos_test) {
         $(".port").typed({
-              strings: ["PORTFOLIO"],
+              strings: ["PROJECTS"],
               typeSpeed: 150,
               showCursor: false
           })
@@ -127,7 +127,7 @@ $(function(){
     $projectsPage.hide()
     $contactPage.hide()
 
-    myFunc()
+
 
   })
 

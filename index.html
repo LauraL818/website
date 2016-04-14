@@ -4,12 +4,9 @@
     <meta charset="utf-8">
     <title>Laura Leonard</title>
 
-        <!-- D3.JS -->
-        <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-
-        <link rel="stylesheet" href="css/d3.css">
-
-
+    <!-- D3.JS -->
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/d3.css">
 
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -29,6 +26,8 @@
 
   </head>
     <body>
+
+      <main>
 
       <!-- MAIN JUMBOTRON -->
       <div id="main-jumbo" class="row">
@@ -53,13 +52,13 @@
 <!-- SUMMARY -->
 
   <div class="home row">
-    <div class="col s12 m6 l6  center-align">
+    <div class="col s12 m12 l6  center-align">
       <img src="./images/me.png" class="circle" alt="" id="profile" height="300px"/>
     </div>
 
-  <div id="summary" class="col s12 m6 l6 home">
+  <div id="summary" class="col s12 m12 l6 home">
       <h5 class="center-align">Hello! I'm Laura and I am a recent graduate from the Web Development Immersive program at General Assembly.</h5>
-      <p class="center-align">I am diehard sports fan who happens to love full stack web development and data visualization.</p>
+      <p class="center-align">I am a diehard sports fan who happens to love full stack web development and data visualization.</p>
       <h5  class="center-align"><a id="learn" class="about-button" href="#">LEARN MORE</a></h5>
     </div>
   </div>
@@ -69,7 +68,8 @@
 
   <div class="row home">
     <div id="portfolio-jumbo">
-      <h1 class="port left-align"></h1>
+      <h1 class="port left-align" id="typed-projects"></h1>
+      <h1 class="port left-align" id="projects">PROJECTS</h1>
     </div>
   </div>
 
@@ -84,34 +84,28 @@
 
 <!-- ABOUT -->
 <div class="about">
-  <div class="row valign-wrapper">
-    <div class="col s12 m4 l4 ">
-      <img src="images/penguins.jpg" alt="" class="responsive-img"/>
-    </div>
-    <div class="col s12 m8 l8 ">
-      <p class="valign">
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-      </p>
-    </div>
-  </div>
   <div class="row">
-    <div class="col s12 m8 l8">
-      <p>
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-      </p>
-
-    </div>
-    <div class="col s12 m4 l4">
+    <div class="col s12 m12  l4 ">
       <img src="images/volcano.jpg" alt="" class="responsive-img"/>
-
     </div>
+    <div class="col s12 m12 l8">
+      <p class="center-align">
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
 
+        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+
+        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+      </p>
+    </div>
   </div>
-  <div class="row">
+
+  <div class="row bubbleChart">
     <div class="col s12 m12 l12">
+      <h5 class="center-align">Laura Leonard in a Bubble Chart</h5>
         <div class="center-align" id="mainBubble"></div>
     </div>
   </div>
+
 </div>
 <!-- END ABOUT -->
 
@@ -119,7 +113,7 @@
   <div class="projects">
 
   <div class="row">
-   <div class="col s12 m3 l3">
+   <div class="col s12 m12 l3">
      <div class="card">
        <div class="card-image">
          <img src="images/Long-Shot.png">
@@ -133,7 +127,7 @@
      </div>
    </div>
 
-   <div class="col s12 m3 l3">
+   <div class="col s12 m12 l3">
      <div class="card">
        <div class="card-image">
          <img src="images/Baseball-journal.png">
@@ -147,13 +141,13 @@
      </div>
    </div>
 
-   <div class="col s12 m3 l3">
+   <div class="col s12 m12 l3">
      <div class="card">
        <div class="card-image">
          <img src="images/VentCal.png">
        </div>
        <div class="card-content">
-         <p>VentCal is an app that is targeted towards people looking for events in their area. Using the Yelp, EventFul, SeatGeek, and SoundCloud APIs, users can search for events in their area and add desirable events to their calendar.</p>
+         <p>VentCal is an app that is targeted towards people looking for events in their area. Using the Yelp, EventFul, SeatGeek, and SoundCloud APIs, users can search for events in their area and add events that they like to their calendar.</p>
        </div>
        <div class="card-action">
          <a href="https://ventcal.herokuapp.com/">VentCal</a>
@@ -161,7 +155,7 @@
      </div>
    </div>
 
-   <div class="col s12 m3 l3">
+   <div class="col s12 m12 l3">
      <div class="card ">
        <div class="card-image">
          <img src="images/Movie-Index.png">
@@ -184,23 +178,22 @@
       <div class="contact">
         <div class="row">
           <div class="col s12 m12 l12 center-align">
-              <img src="images/Wall.png" alt="" class="circle" height="200px"/>
+              <img src="images/Wall.png" alt="" class="circle" height="200px" id="wall"/>
           </div>
         </div>
         <div class="row">
           <div class="col s12  m12 l12 center-align">
-            <i class="material-icons">stay_primary_portrait</i><br>
-            720.277.7468
+            <!-- <i class="material-icons">stay_primary_portrait</i> -->
+            <p class="information">
+              720.277.7468
+            </p>
+            <p class="information">
+               laura.leonard818@gmail.com
+            </p>
           </div>
         </div>
         <div class="row">
           <div class="col s12  m12 l12 center-align">
-            <i class="material-icons">email</i><br>
-             laura.leonard818@gmail.com
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s2  m12 l12 center-align">
             <a href="https://github.com/LauraL818"> <img src="images/github.png" alt="" class="circle icons" height="50px"/></a>
             <a href="https://profiles.generalassemb.ly/profiles/laura-leonard"><img src="images/GA.png" alt="" class="circle icons" height="50px"/></a>
             <a href="https://www.linkedin.com/in/laural818"><img src="images/linkedin.png" alt="" class="circle icons" height="50px"/>
@@ -212,9 +205,13 @@
 
 
 
-
+</main>
     <footer class="center-align" id="footer-div">
-    LAURA LEONARD | FULL STACK DEVELOPER </footer>
+    <p>
+      LAURA LEONARD | FULL STACK DEVELOPER
+    </p></footer>
+
+
     <script src="js/d3.js"></script>
   </body>
 </html>
