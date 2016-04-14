@@ -38,26 +38,34 @@ $(function(){
   $fourDescription.hide()
 
 /////////////////////FUNCTION FOR TYPING NAME/////////////////////////
-  // setTimeout(
-  //   function(){
-  //     $(".name").typed({
-  //           strings: ["LAURA ^500 LEONARD"],
-  //           typeSpeed: 50,
-  //           showCursor: false
-  //       })}, 600)
 
-        var myFunc = function() {
-        $(".name").typed({
-           strings: ["LAURA", "LAURA LEONARD"],
-           typeSpeed: 100, // typing speed
-           backDelay: 500, // pause before backspacing
-           showCursor:false,
-           callback: function () {
-               myFunc();
-           }
-        });
-      }
-      myFunc()
+  setTimeout(
+    function(){
+      var myFunc = function() {
+      $(".name").typed({
+         strings: ["LAURA", "LAURA LEONARD"],
+         typeSpeed: 100, // typing speed
+         backDelay: 500, // pause before backspacing
+         showCursor:false,
+         callback: function () {
+             myFunc();
+         }
+      });
+    }
+    myFunc()}, 1000)
+      //
+      //   var myFunc = function() {
+      //   $(".name").typed({
+      //      strings: ["LAURA", "LAURA LEONARD"],
+      //      typeSpeed: 100, // typing speed
+      //      backDelay: 500, // pause before backspacing
+      //      showCursor:false,
+      //      callback: function () {
+      //          myFunc();
+      //      }
+      //   });
+      // }
+      // myFunc()
 
 
 /////////////////////FUNCTION FOR TYPING PORTFOLIO/////////////////////////

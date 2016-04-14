@@ -3,7 +3,6 @@ body {
   overflow-x:hidden;
 }
 
-
 #main-jumbo {
   background:
     /* top, transparent red, faked with gradient */
@@ -135,4 +134,16 @@ footer.page-footer {
 
 .card .card-content{
   color: #5C594D;
+}
+
+i{
+  color: #507E85;
+}
+
+.info{
+  color: #5C594D;
+}
+
+.icons:hover {
+  opacity: 0.5;
 }
