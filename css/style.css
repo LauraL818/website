@@ -169,6 +169,16 @@ i{
   font-size: 18px;
 }
 
+.chip {
+  background-color: rgba(198, 219, 239,0.4);
+  color: rgb(107, 174, 214);
+}
+
+.skills{
+  color: #5C594D;
+}
+
+
 
 @media (max-width: 1000px) {
   #projects {
