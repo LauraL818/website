@@ -1,15 +1,9 @@
-/*@font-face {
-  src: url('../fonts/Coves_Bold.otf');
-  font-family: Coves;
-}*/
-
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background-color: white;
+  /*background-color: white;*/
   overflow-x:hidden;
-  /*font-family: Coves;*/
   font-family: 'Fira Sans', sans-serif;
 }
 
@@ -64,6 +58,10 @@ nav {
 
 nav ul a{
   color:#efebe0;
+}
+
+.nav-wrapper a {
+    font-size: 18px;
 }
 
 
