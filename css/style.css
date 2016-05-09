@@ -1,15 +1,16 @@
-@font-face {
+/*@font-face {
   src: url('../fonts/Coves_Bold.otf');
   font-family: Coves;
-}
+}*/
 
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background-color: #efebe0;
+  background-color: white;
   overflow-x:hidden;
-  font-family: Coves;
+  /*font-family: Coves;*/
+  font-family: 'Fira Sans', sans-serif;
 }
 
 main {
@@ -167,6 +168,7 @@ i{
 
 .information {
   font-size: 18px;
+  color: #5C594D;
 }
 
 .chip {
