@@ -178,6 +178,14 @@ i{
   color: #5C594D;
 }
 
+#email{
+  color: #5C594D;
+}
+
+#email:hover{
+  opacity: 0.5;
+}
+
 
 
 @media (max-width: 1000px) {
